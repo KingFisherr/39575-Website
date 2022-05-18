@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 .logo{
-    width: 240px;
+    width: 225px;
     cursor: pointer;
 }
 .navbar ul li{
@@ -30,7 +30,7 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: none;
+    color: black;
     text-transform: uppercase;
 }
 .navbar ul li::after{
@@ -39,7 +39,7 @@
     width: 0;
     background: #ff0000;
     position: absolute;
-    left: 0;
+    left: -1;
     bottom: -10px;
     transition: 0.5s;
 }
@@ -78,7 +78,7 @@ button{
     overflow: hidden;
 }
 span{
-    background: #ffa600;
+    background: #ff0000;
     height: 100%;
     width: 0;
     border-radius: 25px;
