@@ -8,7 +8,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(55, 112, 129, 0.75),rgba(0,0,0,0.75), url());
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -21,7 +21,7 @@
     justify-content: space-between;
 }
 .logo{
-    width: 225px;
+    width: 240px;
     cursor: pointer;
 }
 .navbar ul li{
@@ -32,7 +32,7 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
 }
 .navbar ul li::after{
@@ -51,13 +51,13 @@
 .content{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     text-align: center;
-    color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
 }
 .content h1{
-    font-size: 70px;
+    font-size: 25px;
     margin-top: 80px;
 }
 .content p{
@@ -72,9 +72,9 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #db0000;
+    border: 2px solid #ff0000;
     background: transparent;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -105,9 +105,14 @@ button:hover{
     top: 30%;
     transform: translateY(-50%);
     text-align: center;
-    color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
 }
 
+.banner2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
 .p2content p{
     margin: 20px auto;
     font-weight: 100;
@@ -115,6 +120,15 @@ button:hover{
 }
 
 /*Page 3 Content*/
-
+.banner3{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
 
 /*Page 4 Content*/
+.banner4{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}

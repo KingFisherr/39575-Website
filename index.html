@@ -1,12 +1,26 @@
 <html>
 <head>
+    <script>
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You and " + (localStorage.clickcount - 1) + " others have pledged to donate blood!";
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+        }
+    </script>
     <title> Blood For All</title>
     <link rel ="stylesheet" href = "style.css">
 </head>
 <body>
     <div class = "banner">
         <div class = "navbar">
-            <img src="images/logo.jpg" class ="logo">
+            <img src="images/logo.png" class ="logo">
             <ul>
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="page2.html"> Page 2</a></li>                
@@ -15,10 +29,12 @@
             </ul>
         </div>
         <div class = "content">
-            <h1> BLODDDDDDDD</h1>
-            <p>Some other info</p>
+            <h1> 4.5 million Americans will a need blood transfusion each year</h1>
+            <p> See if you are eligible and pledge a pint today!</p>
             <div>
-                <button type ="button"><span></span><a href="https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link">Link 1</a></button>
+                <button onclick = "location.href ='https://www.redcrossblood.org/donate-blood/how-to-donate/eligibility-requirements.html'"  type ="button"><span></span>Eligibility</button>
+                <button onclick ="clickCounter()"  type ="button"><span></span>Pledge a Pint</button>
+                <div id="result"></div>
             </div>
         </div>
     </div>
